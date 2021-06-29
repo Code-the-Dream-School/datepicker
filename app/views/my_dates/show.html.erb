@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dt:</strong>
+  <%= @my_date.dt.strftime('%B %e, %Y %l:%M %p %Z') %>
+</p>
+
+<%= link_to 'Edit', edit_my_date_path(@my_date) %> |
+<%= link_to 'Edit with Flatpickr', flatpickr_edit_path(@my_date) %> |
+<%= link_to 'Back', my_dates_path %>
